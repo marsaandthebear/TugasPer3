@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <section class="header">
+        <div class="fineo">
+            <h2>FiiNeo.io</h2>
+        </div>
+        <div class="hello">
+            <h2>Hello, Marsa &#128075;</h2>
+        </div>
+        <div class="search-notification-profile">
+            <div class="search">
+                <input type="text" placeholder="Search Scdule..">
+                <button><i class="ri-search-line"></i></button>
+            </div>
+            <div class="notification-profile">
+                <div class="picon bell">
+                    <i class="ri-notification-2-line"></i>
+                </div>
+                <div class="picon profile">
+                    <img src="profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="sidebar">
+            <ul class="sidebar-items">
+                <li>
+                    <a href="#">
+                        <span class="icon icon-1"><i class="ri-dashboard-fill"></i></span>
+                        <span class="">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-2"><i class="ri-bar-chart-2-fill"></i></span>
+                        <span class="">Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-3"><i class="ri-wallet-fill"></i></span>
+                        <span class="">My Wallet</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-4"><i class="ri-folder-transfer-fill"></i></span>
+                        <span class="">Transfers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-5"><i class="ri-message-2-fill"></i></span>
+                        <span class="">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-6"><i class="ri-heart-add-2-fill"></i></span>
+                        <span class="">Favorite</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-7"><i class="ri-user-fill"></i></span>
+                        <span class="">Profile</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sidebar-bottom-items">
+                <li>
+                    <a href="#">
+                        <span class="icon icon-8"><i class="ri-questionnaire-fill"></i></span>
+                        <span class="">Support</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon icon-9"><i class="ri-chat-settings-fill"></i></span>
+                        <span class="">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content-a">
+            <div class="cards">
+                <div class="mycard">
+                    <h3>My Card</h3>
+                </div>
+                <div class="add">
+                    <a href="#">
+                        <h5><span>Add New</span></h5>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="visa-logo">VISA</div>
+                    <div class="card-number">1230 4670 4670 1230</div>
+                    <div class="card-holder">Rakib Kowshar</div>
+                    <div class="expiry-date">05/27</div>
+                    <div class="contactless-icon"></div>
+                </div>
+                <div class="card">
+                    <div class="visa-logo">VISA</div>
+                    <div class="card-number">1230 4670 4670 1230</div>
+                    <div class="card-holder">Marsalina</div>
+                    <div class="expiry-date">03/25</div>
+                    <div class="contactless-icon"></div>
+                </div>
+            </div>
+
+            <div class="transactions-container">
+                <div class="transactions-header">
+                    <div class="transactions-title">Transactions</div>
+                    <select class="month-dropdown">
+                        <option value="month">Month</option>
+                        <option value="jan">January</option>
+                        <option value="feb">February</option>
+                        <option value="mar">March</option>
+                        <option value="apr">April</option>
+                        <option value="may">May</option>
+                        <option value="jun">June</option>
+                        <option value="jul">July</option>
+                        <option value="aug">August</option>
+                        <option value="sep">September</option>
+                        <option value="oct">October</option>
+                        <option value="nov">November</option>
+                        <option value="dec">December</option>
+                    </select>
+                </div>
+        
+                <div class="transaction-item">
+                    <div class="transaction-info">
+                        <div class="transaction-icon">🎥</div>
+                        <div class="transaction-details-container">
+                            <div class="transaction-details">Weeding video</div>
+                            <div class="transaction-date">Apr 06, 2021</div>
+                        </div>
+                    </div>
+                    <div class="transaction-amount">$3,000</div>
+                </div>
+        
+                <div class="transaction-item">
+                    <div class="transaction-info">
+                        <div class="transaction-icon">🛂</div>
+                        <div class="transaction-details-container">
+                            <div class="transaction-details">Passport verificaiton</div>
+                            <div class="transaction-date">Apr 02, 2021</div>
+                        </div>
+                    </div>
+                    <div class="transaction-amount">$100</div>
+                </div>
+        
+                <div class="transaction-item">
+                    <div class="transaction-info">
+                        <div class="transaction-icon">📷</div>
+                        <div class="transaction-details-container">
+                            <div class="transaction-details">RK's Photography</div>
+                            <div class="transaction-date">Mar 28, 2021</div>
+                        </div>
+                    </div>
+                    <div class="transaction-amount">$470</div>
+                </div>
+        
+                <div class="transaction-item">
+                    <div class="transaction-info">
+                        <div class="transaction-icon">🛂</div>
+                        <div class="transaction-details-container">
+                            <div class="transaction-details">Passport verificaiton</div>
+                            <div class="transaction-date">Apr 02, 2021</div>
+                        </div>
+                    </div>
+                    <div class="transaction-amount">$100</div>
+                </div>
+        
+                <div class="transaction-item">
+                    <div class="transaction-info">
+                        <div class="transaction-icon">🛒</div>
+                        <div class="transaction-details-container">
+                            <div class="transaction-details">Grocery Shop</div>
+                            <div class="transaction-date">Mar 24, 2021</div>
+                        </div>
+                    </div>
+                    <div class="transaction-amount">$186</div>
+                </div>
+        
+                <div class="transaction-item">
+                    <div class="transaction-info">
+                        <div class="transaction-icon">✈️</div>
+                        <div class="transaction-details-container">
+                            <div class="transaction-details">Flight Ticket</div>
+                            <div class="transaction-date">Mar 21, 2021</div>
+                        </div>
+                    </div>
+                    <div class="transaction-amount">$860</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-b">
+
+            <!-- GPT -->
+            <div class="graph-history-container">
+                <!-- Graph Section -->
+                <div class="graph-container">
+                    <div class="graph-header">
+                        <div class="graph-title">Expenses/Income</div>
+                        <div class="graph-options">
+                            <div class="graph-option active">All</div>
+                            <div class="graph-option">D</div>
+                            <div class="graph-option">W</div>
+                            <div class="graph-option">M</div>
+                        </div>
+                    </div>
+                    <canvas id="expenseIncomeChart" class="graph"></canvas>
+                </div>
+        
+                <!-- History Section -->
+                <div class="history-container">
+                    <div class="history-title">History</div>
+        
+                    <div class="history-item">
+                        <div class="history-info">
+                            <div class="history-icon">in</div>
+                            <div class="history-details">LinkedIn Pro</div>
+                        </div>
+                        <div class="history-amount">-260.80</div>
+                    </div>
+        
+                    <div class="history-item">
+                        <div class="history-info">
+                            <div class="history-icon">fig</div>
+                            <div class="history-details">Figma plan</div>
+                        </div>
+                        <div class="history-amount">-126.50</div>
+                    </div>
+        
+                    <div class="history-item">
+                        <div class="history-info">
+                            <div class="history-icon">ig</div>
+                            <div class="history-details">Instagram ads</div>
+                        </div>
+                        <div class="history-amount">-108.40</div>
+                    </div>
+        
+                    <div class="history-item">
+                        <div class="history-info">
+                            <div class="history-icon">dr</div>
+                            <div class="history-details">Dribble Pro</div>
+                        </div>
+                        <div class="history-amount">-108.40</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
